@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="./app.js" defer></script>
+    <title>Fylo landing page with two column layout</title>
+  </head>
+  <body>
+    <header>
+      <!-- navbar starts here -->
+      <div class="container nav">
+        <img class="logo" src="./images/logo.svg" alt="site logo" />
+        <div id="toggle-menu" class="nav__menu">
+          <span class="hamburger"></span>
+        </div>
+        <ul class="nav__list scale-up-center">
+          <li class="nav__list--item">
+            <a class="nav__list--item__link" href="#">features</a>
+          </li>
+          <li class="nav__list--item">
+            <a class="nav__list--item__link" href="#">team</a>
+          </li>
+          <li class="nav__list--item">
+            <a class="nav__list--item__link" href="#">sign in</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div id="intro" class="group container row-reverse intro">
+        <div class="col">
+          <img
+            class="intro__image"
+            src="./images/illustration-1.svg"
+            alt="people finding files in a folder"
+          />
+        </div>
+        <div class="col">
+          <h1 class="section__title section__title--dark">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p>
+            Fylo stores your most important files in one secure location. access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <form
+            id="get-started-1"
+            class="email"
+            action="#get-started-1"
+            onsubmit="return onIntroSubmitHandler()"
+          >
+            <input
+              class="intro__email--input"
+              type="text"
+              placeholder="Enter your email"
+              onkeydown="introValidation()"
+            />
+            <span class="error"></span>
+            <input type="submit" value="Get started" />
+          </form>
+        </div>
+      </div>
+      <!-- stay productive starts here -->
+      <div class="group row-reverse container productive">
+        <div class="col">
+          <img
+            class="productive-image"
+            src="./images/illustration-2.svg"
+            alt="People communicating remotely"
+          />
+        </div>
+        <div class="col">
+          <div class="productive__content">
+            <h2 class="section__title section__title--dark">
+              Stay productive, wherever you are
+            </h2>
+            <span class="productive__content--details">
+              <p>
+                Never let location be an issue when accessing your files. Fylo
+                has you covered for all of your file storage needs.
+              </p>
+              <p>
+                Securely share files and folders with friends, family and
+                colleagues for live collaboration. No email attachments
+                required!
+              </p></span
+            >
+            <a class="button-link" href="#">See how Fylo works</a>
+          </div>
+          <div class="testimonial">
+            <div class="content">
+              <p>
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+            </div>
+            <div class="profile">
+              <img
+                class="avatar"
+                src="./images/avatar-testimonial.jpg"
+                alt="avatar"
+              />
+              <div class="profile__content">
+                <p class="profile__content-name">Kyle Burton</p>
+                <p class="profile__content-position">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Early access starts here -->
+
+      <div id="early-access" class="access">
+        <div class="group row container">
+          <div class="col access__details">
+            <h3 class="section__title">Get early access today</h3>
+            <p>
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <form
+            id="get-started-2"
+            action="#get-started-2"
+            class="col email"
+            onsubmit="return onAccesSubmitHandler()"
+          >
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="access__email--input"
+              onkeydown="earlyAccessValidation()"
+            />
+            <span class="error error__light"></span>
+            <input type="submit" value="Get Started For Free" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-links row group container">
+        <div class="contact">
+          <img
+            class="footer-logo"
+            src="./images/logo-white.svg"
+            alt="site logo in white color"
+          />
+          <p class="phone w-icon">Phone: +1-543-123-4567</p>
+          <p class="email w-icon">example@fylo.com</p>
+        </div>
+        <nav class="row footer-links__nav" aria-label="footer nav">
+          <ul class="footer-links__nav--list">
+            <li class="footer-links__nav--list__item">
+              <a class="footer-links__nav--list__item-link" href="#about-us"
+                >About Us</a
+              >
+            </li>
+
+            <li class="footer-links__nav--list__item">
+              <a class="footer-links__nav--list__item-link" href="#jobs"
+                >Jobs</a
+              >
+            </li>
+            <li class="footer-links__nav--list__item">
+              <a class="footer-links__nav--list__item-link" href="#press"
+                >Press</a
+              >
+            </li>
+            <li class="footer-links__nav--list__item">
+              <a class="footer-links__nav--list__item-link" href="#blog"
+                >Blog</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-links__nav--list">
+            <li class="footer-links__nav--list__item">
+              <a class="footer-links__nav--list__item-link" href="#contact-us"
+                >Contact Us</a
+              >
+            </li>
+            <li class="footer-links__nav--list__item">
+              <a class="footer-links__nav--list__item-link" href="#blog"
+                >Terms</a
+              >
+            </li>
+            <li class="footer-links__nav--list__item">
+              <a class="footer-links__nav--list__item-link" href="#privacy"
+                >Privacy</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-links__nav--list social-icons">
+            <li class="footer-links__nav--list__item">
+              <a class="footer-links__nav--list__item-link" href="#fb">
+                <i class="icon-fb-icon"></i>
+              </a>
+            </li>
+            <li class="footer-links__nav--list__item">
+              <a class="footer-links__nav--list__item-link" href="#twitter">
+                <i class="icon-twitter-icon"></i>
+              </a>
+            </li>
+            <li class="footer-links__nav--list__item">
+              <a class="footer-links__nav--list__item-link" href="#instagram">
+                <i class="icon-instagram-icon"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="attribution"></div>
+    </footer>
+  </body>
+</html>
