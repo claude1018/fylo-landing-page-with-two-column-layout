@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor](https://your-solution-url.com)
+- Solution URL: [FrontendMentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5/hub/responsive-fylo-landing-page-with-two-column-layout-_ih_jIqkbq)
 - Live Site URL: [Github Pages](https://claude1018.github.io/fylo-landing-page-with-two-column-layout/)
 
 ## My process

@@ -432,6 +432,22 @@ footer {
   margin: 0;
 }
 
+.attribution {
+  color: #fff;
+  font-size: clamp(0.625rem, 1vw + 0.14rem, 0.875rem);
+  text-align: center;
+  padding-bottom: 0.35em;
+  font-family: var(--font-body-copy);
+}
+
+.attribution a {
+  color: var(--button-link-color);
+  font-family: var(--font-heading);
+}
+
+.attribution a:hover {
+  color: var(--cta-color);
+}
 /* ==================Media Queries======================= */
 
 @media (min-width: 540px) {
