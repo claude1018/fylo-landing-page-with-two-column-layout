@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [FrontendMentor](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Live Site URL: [Github Pages](https://claude1018.github.io/fylo-landing-page-with-two-column-layout/)
 
 ## My process
 

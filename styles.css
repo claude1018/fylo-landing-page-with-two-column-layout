@@ -455,7 +455,7 @@ footer {
   }
 
   .nav__list--item + .nav__list--item {
-    margin-left: 0.75em;
+    margin-left: 1.75em;
   }
 }
 
